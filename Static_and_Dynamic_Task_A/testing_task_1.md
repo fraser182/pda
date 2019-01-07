@@ -7,25 +7,32 @@
 class CardGame
 
 
-  def checkforAce(card) #ERROR 2# should be written as check_for_ace
-    if card.value = 1  #ERROR 3# should be ==
+
+# ERROR 2# should be card.value == 1
+  def checkforAce(card)
+    if card.value = 1  
       return true
     else
       return false
     end
   end
 
-  dif highest_card(card1 card2) #ERROR 4# def instead of dif
-  # ERROR 5# should have a comma between card 1 and card 2
+# ERROR 3# should be def instead of dif
+# ERROR 4# should have a comma between card 1 and card 2
+# ERROR 5# has an extra 'end'
+  dif highest_card(card1 card2)
+
   if card1.value > card2.value
     return card
   else
     return card2
   end
 end
-end  #ERROR 6# extra end too many
+end
 
-def self.cards_total(cards)
+# ERROR 7#
+
+def self.cards_total(cards) #ERROR 11#
   total #ERROR 7# total = 0 should be set to start.
   for card in cards
     total += card.value

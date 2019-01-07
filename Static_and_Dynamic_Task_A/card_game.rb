@@ -3,6 +3,7 @@
 # Carry out dynamic testing on the code below.
 # Correct the errors below that you spotted in task 1.
 require_relative("./card.rb")
+require ("pry")
 
 class CardGame
 
@@ -31,3 +32,6 @@ class CardGame
     return "You have a total of " + total.to_s
   end
 end
+
+binding.pry
+nil
